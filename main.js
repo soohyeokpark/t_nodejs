@@ -18,7 +18,7 @@ var app = http.createServer(function (request, response) {
         var fileName = title.toString().toLowerCase();
         var dynamicList = new String("");
         var dynamicContent = new String("");
-        var template = new String("asdf");
+        var template = new String("");
 
         fs.readdir('./data', function(err, fileList) {
             fileList.forEach(function(element) {
