@@ -4,6 +4,9 @@ var url = require('url');
 var as = require('async');
 const { Console } = require('console');
 
+// pm2 start main.js --watch
+// pm2 stop main
+
 var app = http.createServer(function (request, response) {
     var _url = request.url;
     var queryData = url.parse(_url, true).query;
@@ -38,6 +41,8 @@ var app = http.createServer(function (request, response) {
                     </head>
                     <body>
                         <h1><a href="/">WEB</a></h1>
+                        <p>pm2 test str</p> 
+                        <p>pm2 test str2</p>
                         <ol>${dynamicList}</ol>
                         <h2>${title}</h2>
                         <p>${dynamicContent}</p>
